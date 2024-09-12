@@ -1,0 +1,162 @@
+.footer-class
+{
+  width: 100%;
+  height: 65vh;
+  background-color: #052f5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-content-class
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-welcome-class
+{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 25px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.line
+{
+  height: 1px;
+  width: 85vw;
+  background-color: #ffffff;
+  margin-top: 15px;
+}
+
+.footer-table
+{
+  width: 80vw;
+  margin-top: 20px;
+}
+
+.footer-table table
+{
+  width: 80vw;
+  border-collapse: collapse;
+}
+
+.footer-table th, .footer-table td
+{
+  vertical-align: top;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.footer-table th
+{
+  color: #ffffff;
+  text-align: left;
+}
+
+.footer-table td
+{
+  width: 20%; /* Ensure each column takes equal space */
+}
+
+.footer-table strong
+{
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-table ul
+{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-table ul li
+{
+  margin: 15px 0;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.footer-table a
+{
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-table a:hover
+{
+  text-decoration: underline;
+}
+
+.social-media-list img
+{
+  margin-right: 10px;
+}
+
+.copyright-class
+{
+  margin-top: 30px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90vw;
+  font-size: 14px;
+  text-align: center;
+}
+
+.copyright-class .cr-content2-class a
+{
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.copyright-class .cr-content2-class a:hover
+{
+  text-decoration: underline;
+}
+.copyright-class
+{
+  margin-top: 2px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+}
+
+.copyright-class .cr-content1-class,
+.copyright-class .cr-content2-class
+{
+  margin: 10px 10px 10px 20px;
+}
+
+.copyright-class .cr-content2-class a
+{
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.copyright-class .cr-content2-class a:hover
+{
+  text-decoration: underline;
+}

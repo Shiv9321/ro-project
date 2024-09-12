@@ -1,0 +1,54 @@
+.why-use-class
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  height: 80vh;
+  margin-left: 20px;
+}
+
+.why-use-content-class
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffffff;
+}
+
+.why-use-content-1-class
+{
+  width: 60vw;
+}
+
+
+.why-use-content-1-class h1
+{
+  color: black;
+  font-size: 28px;
+}
+
+.why-use-content-1-div-class
+{
+  color:  #636ea8;
+  font-size: 15px;
+}
+
+.why-use-content-2-class
+{
+  width: 60vw;
+}
+
+.why-use-content-2-class h1
+{
+  color: black;
+  font-size: 22px;
+}
+
+.why-use-content-2-div-class
+{
+  color: #636ea8;
+  font-size: 15px;
+}

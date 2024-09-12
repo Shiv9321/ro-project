@@ -1,0 +1,29 @@
+.scroll-to-top
+{
+  position: fixed;
+  bottom: 22vh;
+  right: 16px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  color: #387dc7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 0 3px #387dc7;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover
+{
+  box-shadow: 0 0 0 4px;
+}
+
+.scroll-to-top fa-icon
+{
+  font-size: 20px;
+}

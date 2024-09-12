@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="ICON_SYSTEM_100px_RO_Tech" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#0C8EFB;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{opacity:0.5;}
+	.st2{fill:none;stroke:#0C8EFB;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#0755E3;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:#FFFFFF;}
+	.st6{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st7{font-family:'DINPro-Bold';}
+	.st8{font-size:11px;}
+</style>
+<path id="Path" class="st0" d="M50.4,63.2c0-6.3,10.2-18.8,10.2-18.8s10.2,12.5,10.2,18.8c0,5.5-4.4,10-9.9,10c-0.1,0-0.2,0-0.3,0
+	c-5.5,0.1-10.1-4.2-10.2-9.7C50.4,63.4,50.4,63.3,50.4,63.2z"/>
+<g id="Group" transform="translate(16.8 16.8)" class="st1">
+	<path id="Shape" class="st2" d="M77.1,15.3c15.8,18.3,13.7,46-4.7,61.7c-7.9,6.8-18.1,10.6-28.6,10.6c-9.8,0-19.3-3.3-27.1-9.4
+		 M8.1,69.2L8.1,69.2L8.1,69.2L8.1,69.2c-14.1-19.7-9.5-47,10.2-61.1C33.5-2.7,54-2.7,69.2,8.1"/>
+	<path id="Path-2" class="st2" d="M75.6,22.8v-8.4H84"/>
+	<path id="Path-3" class="st2" d="M10.8,62.4v8.4H2.4"/>
+</g>
+<g id="Oval" transform="translate(13.2 14.4)">
+	<circle class="st3" cx="15" cy="15" r="15"/>
+	<circle class="st4" cx="15" cy="15" r="15.5"/>
+</g>
+<g id="Oval-2" transform="translate(74.4 73.8)">
+	<circle class="st3" cx="16.2" cy="16.2" r="16.2"/>
+	<circle class="st4" cx="16.2" cy="16.2" r="16.7"/>
+</g>
+<path id="UV" class="st5" d="M80.8,88.3c-0.4-0.4-0.6-1-0.6-1.7V82h1.4v4.7c0,0.3,0,0.6,0.2,0.8c0.2,0.2,0.4,0.3,0.7,0.2
+	c0.3,0,0.5-0.1,0.7-0.2c0.1-0.2,0.2-0.5,0.2-0.8V82h1.4v4.7c0,0.6-0.2,1.2-0.6,1.6c-0.5,0.4-1,0.6-1.7,0.6
+	C81.8,88.9,81.2,88.7,80.8,88.3z M87.2,88.8l-2-6.8h1.5l1.1,4.9l1.1-4.9h1.5l-2,6.8L87.2,88.8z"/>
+<path id="UF" class="st5" d="M92.6,97.9c-0.4-0.4-0.6-1-0.6-1.7v-4.7h1.4v4.7c0,0.3,0,0.6,0.2,0.8c0.2,0.2,0.4,0.3,0.7,0.2
+	c0.3,0,0.5-0.1,0.7-0.2c0.1-0.2,0.2-0.5,0.2-0.8v-4.7h1.4v4.7c0,0.6-0.2,1.2-0.6,1.6c-0.5,0.4-1,0.6-1.7,0.6
+	C93.7,98.5,93.1,98.3,92.6,97.9z M97.6,98.4v-6.8h3.8v1.1H99v1.8h2.1v1.1H99v2.8L97.6,98.4z"/>
+<path id="Path_5" class="st6" d="M85.2,94.8l12-10.8"/>
+<path id="Path_6" class="st0" d="M60.6,66v-9.6"/>
+<path id="Path_6-2" class="st0" d="M55.8,61.2h9.6"/>
+<text transform="matrix(1 0 0 1 20.6948 32.5085)" class="st5 st7 st8">RO</text>
+</svg>
