@@ -1,0 +1,18 @@
+.product-catalog-section-sorting-section-class
+{
+  height:170vh;
+  width: 14vw;
+  border: 1px solid #052f5c;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  color: #052f5c;
+  background-color: #ffffff;;
+}

@@ -1,0 +1,102 @@
+
+.product-catalog-section-product-section-class
+{
+  width: 75vw;
+  margin-top: 5px;
+  margin-left: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.product-catalog-section-product-section-product-1-class
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 42vh;
+  width: 70vw;
+  padding-top: 20px;
+  border-radius: 30px;
+  margin-top: 2vh;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 10px 10px #d4dbe4;
+}
+
+.product-catalog-section-product-section-product-1-div-image-class
+{
+  width: 240px;
+  height: 240px;
+  background-color: #9bc3c7;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product-catalog-section-product-section-product-1-image-class
+{
+  width: 220px;
+  height: 220px;
+}
+
+.product-catalog-section-product-section-product-1-description-class
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.product-catalog-section-product-section-product-1-description-name-class
+{
+  color: #052f5c;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product-catalog-section-product-section-product-1-description-info-class
+{
+  color: #575a5c;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.product-catalog-section-product-section-product-1-description-price-class
+{
+  color: #191a1b;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.product-catalog-section-product-section-product-1-buy-class
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.product-catalog-section-product-section-product-1-buy-heading-class
+{
+  color: #052f5c;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product-catalog-section-product-section-product-1-buy-options-class
+{
+  color: #575a5c;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+}
