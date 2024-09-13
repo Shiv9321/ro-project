@@ -1,9 +1,9 @@
 .product-catalog-section-sorting-section-class
 {
-  height:170vh;
+  height: auto;
   width: 14vw;
   border: 1px solid #052f5c;
-  padding: 15px;
+  padding: 2.4vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

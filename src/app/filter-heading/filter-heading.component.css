@@ -5,32 +5,13 @@
   justify-content: flex-start;
   align-items: flex-start;
   font-weight: 600;
-  padding-top: 10px;
+  padding-top: 1vh;
 }
 
 .product-catalog-section-sorting-section-filter-by-below-line-class
 {
-  margin-top: 24px;
   width: 13vw;
-  height: 1.5px;
+  height: 0.2vh;
   background-color: #9a9fa5;
-}
-
-
-.product-catalog-section-sorting-section-filter-by-class
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  font-weight: 600;
-  padding-top: 10px;
-}
-
-.product-catalog-section-sorting-section-filter-by-below-line-class
-{
-  margin-top: 24px;
-  width: 13vw;
-  height: 1.5px;
-  background-color: #9a9fa5;
+  margin-top: 3vh;
 }

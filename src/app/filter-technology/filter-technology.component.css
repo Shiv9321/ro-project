@@ -1,8 +1,7 @@
-
 .product-catalog-section-sorting-technology-class
 {
   display: flex;
-  margin-top: 44px;
+  margin-top: 5vh;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -20,7 +19,7 @@
 .product-catalog-section-sorting-section-technology-1-1-class
 {
   color: #193459;
-  font-size: 20px;
+  font-size: 2.8vh;
   font-weight: 600;
 }
 
@@ -29,24 +28,24 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 22px;
+  height: 4vh;
   width: 7vw;
-  padding-left: 14px;
+  padding-left: 2vw;
 }
 
 .product-catalog-section-sorting-section-technology-1-2-line-class
 {
   width: 1.6vw;
-  height: 1.5px;
+  height: 0.3vh;
   background-color: #193459;
 }
 
 .product-catalog-section-sorting-section-technology-2-class
 {
-  margin-top: 14px;
-  padding-left: 14px;
+  margin-top: 3vh;
+  padding-left: 1.2vw;
   color: #193459;
-  font-size: 16px;
+  font-size: 2.4vh;
   font-weight: 500;
   display: flex;
   flex-direction: row;
@@ -62,22 +61,22 @@
 
 .product-catalog-section-sorting-section-technology-2-1-ro-class
 {
-  padding-top: 8px;
+  padding-top: 1.6vh;
 }
 
 .product-catalog-section-sorting-section-technology-2-1-uv-class
 {
-  padding-top: 24px;
+  padding-top: 3.6vh;
 }
 
 .product-catalog-section-sorting-section-technology-2-1-cr-class
 {
-  padding-top: 20px;
+  padding-top: 3vh;
 }
 
 .product-catalog-section-sorting-section-technology-2-1-er-class
 {
-  padding-top: 20px;
+  padding-top: 3vh;
 }
 
 .product-catalog-section-sorting-section-technology-2-1-ro-checkbox-class
@@ -87,23 +86,23 @@
 
 .product-catalog-section-sorting-section-technology-2-1-uv-checkbox-class
 {
-  padding-top: 11px;
+  padding-top: 2vh;
 }
 
 .product-catalog-section-sorting-section-technology-2-1-cr-checkbox-class
 {
-  padding-top: 15px;
+  padding-top: 3vh;
 }
 
 .product-catalog-section-sorting-section-technology-2-1-er-checkbox-class
 {
-  padding-top: 24px;
+  padding-top: 3.5vh;
 }
 
 input[type="checkbox"]
 {
-  width: 22px;
-  height: 22px;
+  width: 1.6vw;
+  height: 1.6vw;
 }
 
 input[type="checkbox"]:checked
@@ -113,8 +112,8 @@ input[type="checkbox"]:checked
 
 .product-catalog-section-sorting-section-technology-below-line-class
 {
-  margin-top: 54px;
+  margin-top: 7vh;
   width: 13vw;
-  height: 1.5px;
+  height: 0.2vh;
   background-color: #9a9fa5;
 }

@@ -2,7 +2,6 @@
 {
   height: auto;
   background-color: #edf0f2;
-  margin-top: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,13 +11,13 @@
 
 .features-section-heading-class
 {
-  font-size: 30px;
+  font-size: 6.5vh;
   font-weight: 600;
 }
 
 .features-section-heading-below-content-class
 {
-  font-size: 14px;
+  font-size: 2vh;
   margin-top: 2vh;
   color: #397691;
 }
@@ -53,7 +52,7 @@
 
 .features-section-multiple-sections-section-1-content-class
 {
-  font-size: 13px;
+  font-size: 2.2vh;
   color: #6e797d;
   padding: 2vh;
 }
