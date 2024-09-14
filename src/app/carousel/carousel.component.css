@@ -1,8 +1,9 @@
 .carousel
 {
+  padding-top: 17vmin;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background: linear-gradient(to right, #f1f2f5, #1e4463);
   font-family: -apple-system, BlinkMacSystemFont,
@@ -12,7 +13,6 @@
 
 .carousel-content
 {
-  padding-top: 12vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,14 +21,14 @@
 
 .carousel-content-1
 {
-  font-size: 6.5vh;
+  font-size: 3.5vmax;
   font-weight: 600;
   color: #1f387c;
 }
 
 .carousel-content-2
 {
-  font-size: 5.5vh;
+  font-size: 2vmax;
   font-weight: 700;
   color: #1f387c;
 }
@@ -36,7 +36,7 @@
 .carousel-content-3
 {
   color: rgb(55, 49, 49);
-  font-size: 2.7vh;
+  font-size: 1vmax;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -44,7 +44,7 @@
 .carousel-content-4
 {
   color: rgb(55, 49, 49);
-  font-size: 2.6vh;
+  font-size: 1vmax;
   font-weight: bold;
   margin-top: 5px;
 }
@@ -54,5 +54,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 6vw;
- }
+  padding-right: 60px;
+}
+
+@media (max-width: 950px) and (max-height: 950px)
+{
+  .carousel
+  {
+    width: 101vmax;
+    overflow-x: hidden;
+  }
+}
