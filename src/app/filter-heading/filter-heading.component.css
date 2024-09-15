@@ -1,17 +1,10 @@
 .product-catalog-section-sorting-section-filter-by-class
 {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
   font-weight: 600;
-  padding-top: 1vh;
-}
-
-.product-catalog-section-sorting-section-filter-by-below-line-class
-{
-  width: 13vw;
-  height: 0.2vh;
-  background-color: #9a9fa5;
-  margin-top: 3vh;
+  font-size: 3vmin;
+  padding-top: 1vmin;
 }

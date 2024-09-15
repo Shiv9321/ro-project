@@ -1,7 +1,7 @@
 .product-catalog-section-sorting-section-budget-class
 {
   display: flex;
-  margin-top: 5.2vh;
+  margin-top: 5.2vmin;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -18,42 +18,13 @@
 .product-catalog-section-sorting-section-budget-1-1-class
 {
   color: #193459;
-  font-size: 3.3vh;
+  font-size: 3.3vmin;
   font-weight: 600;
 }
 
 .product-catalog-section-sorting-section-budget-1-2-class
 {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 4vh;
-  width: 7vw;;
-}
-
-.product-catalog-section-sorting-section-budget-1-2-line-class
-{
-  width: 1.6vw;
-  height: 0.3vh;
-  background-color: #193459;
-}
-
-.product-catalog-section-sorting-section-budget-2-class
-{
-  margin-top: 8vh;
-  padding-left: 1.5vw;
-  width: 9vw;
-}
-
-.product-catalog-section-sorting-section-budget-2-2-class
-{
-  padding-left: 5.4vw;
-}
-
-.product-catalog-section-sorting-section-budget-below-line-class
-{
-  margin-top: 10vh;
-  width: 13vw;
-  height: 0.2vh;
-  background-color: #9a9fa5;
+  justify-content: center;
+  align-items: flex-end;
 }

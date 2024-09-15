@@ -1,9 +1,6 @@
 .product-catalog-section-sorting-section-class
 {
-  height: auto;
-  width: 14vw;
-  border: 1px solid #052f5c;
-  padding: 2.4vh;
+  padding: 1.2vmax;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -14,5 +11,23 @@
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
   color: #052f5c;
-  background-color: #ffffff;;
+  background-color: #ffffff;
+  margin: 3vmin;
+  box-shadow: 1px 1px 10px 4px #5c748e ;
+}
+
+.product-catalog-section-sorting-section-filter-by-below-line-class
+{
+  height: 0.1vmin;
+  background-color: #9a9fa5;
+  margin-top: 2vmin;
+  width: 100%;
+}
+
+@media (max-width: 950px) and (max-height: 950px)
+{
+  .product-catalog-section-sorting-section-class
+  {
+    display: none;
+  }
 }
