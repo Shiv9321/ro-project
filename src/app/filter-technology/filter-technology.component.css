@@ -1,13 +1,13 @@
-.product-catalog-section-sorting-technology-class
+.product-catalog-section-sorting-section-storage-class
 {
   display: flex;
-  margin-top: 5vmin;
+  margin-top: 3vmin;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.product-catalog-section-sorting-section-technology-1-class
+.product-catalog-section-sorting-section-storage-1-class
 {
   display: flex;
   flex-direction: row;
@@ -15,91 +15,71 @@
   align-items: flex-start;
 }
 
-.product-catalog-section-sorting-section-technology-1-1-class
+.product-catalog-section-sorting-section-storage-1-1-class
 {
   color: #193459;
-  font-size: 3.1vmin;
+  font-size: 3.3vh;
   font-weight: 600;
 }
 
-.product-catalog-section-sorting-section-technology-1-2-class
+.product-catalog-section-sorting-section-storage-1-2-class
 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
-/* .product-catalog-section-sorting-section-technology-1-2-line-class
-{
-  width: 1.6vw;
-  height: 0.3vh;
-  background-color: #193459;
-} */
-
-.product-catalog-section-sorting-section-technology-2-class
+.product-catalog-section-sorting-section-storage-2-class
 {
   margin-top: 3vmin;
   color: #193459;
-  font-size: 2.4vh;
+  font-size: 2.5vh;
   font-weight: 500;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-}
-
-/* .product-catalog-section-sorting-section-technology-2-2-class
-{
-  padding-left: 5.4vmin;
-}
-
-.product-catalog-section-sorting-section-technology-2-1-ro-class
-{
-  padding-top: 1.6vmin;
-}
-
-.product-catalog-section-sorting-section-technology-2-1-uv-class
-{
-  padding-top: 3.6vmin;
-}
-
-.product-catalog-section-sorting-section-technology-2-1-cr-class
-{
-  padding-top: 3vmin;
-}
-
-.product-catalog-section-sorting-section-technology-2-1-er-class
-{
-  padding-top: 4vmin;
-}
-
-.product-catalog-section-sorting-section-technology-2-1-ro-checkbox-class
-{
-  padding-top: 0;
-}
-
-.product-catalog-section-sorting-section-technology-2-1-uv-checkbox-class
-{
-  padding-top: 1.8vmin;
-}
-
-.product-catalog-section-sorting-section-technology-2-1-cr-checkbox-class
-{
-  padding-top: 2vmin;
-}
-
-.product-catalog-section-sorting-section-technology-2-1-er-checkbox-class
-{
-  padding-top: 2vmin;
+  align-items: center;
+  width: 100%;
 }
 
 input[type="checkbox"]
 {
-  width: 1.6vw;
-  height: 1.6vw;
+  min-width: 1.5vmax;
+  min-height: 1.5vmax;
+  border: 2px solid #193459;
+  border-radius: 5px;
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+  background-color: white;
+  position: relative;
 }
 
 input[type="checkbox"]:checked
 {
-  background-color: gray;
-} */
+  background-color: rgb(225, 238, 239);
+  border: 2px solid #193459;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]::before
+{
+  content: '';
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(65, 143, 185);
+  font-size: 1.2vmax;
+}
+
+input[type="checkbox"]:checked::before
+{
+  content: '✔';
+  display: block;
+}
+
+
+
+
