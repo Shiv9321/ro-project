@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +21,8 @@ import { FilterBudgetComponent } from './filter-budget/filter-budget.component';
 import { FilterTechnologyComponent } from './filter-technology/filter-technology.component';
 import { FilterSowComponent } from './filter-sow/filter-sow.component';
 import { FilterHeadingComponent } from './filter-heading/filter-heading.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -36,12 +40,16 @@ import { FilterHeadingComponent } from './filter-heading/filter-heading.componen
     FilterBudgetComponent,
     FilterTechnologyComponent,
     FilterSowComponent,
-    FilterHeadingComponent
+    FilterHeadingComponent,
+    SignupComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule,
+    NgxSliderModule
   ],
   providers: [
     provideClientHydration()

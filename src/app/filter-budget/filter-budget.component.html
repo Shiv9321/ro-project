@@ -1,15 +1,17 @@
 <div class="product-catalog-section-sorting-section-budget-class">
   <div class="product-catalog-section-sorting-section-budget-1-class">
-      <div class="product-catalog-section-sorting-section-budget-1-1-class">
-        Budget
-      </div>
-      <div class="product-catalog-section-sorting-section-budget-1-2-class">
-        <div class="product-catalog-section-sorting-section-budget-1-2-line-class"></div>
-      </div>
+    <div class="product-catalog-section-sorting-section-budget-1-1-class">
+      Budget Range
+    </div>
   </div>
+
   <div class="product-catalog-section-sorting-section-budget-2-class">
-    <div class="budget-indicator-container">
-      <input type="range" class="range" id="point1" min="0" max="100" value="20">
+    <div *ngIf="isBrowser">
+      <ngx-slider
+        [(value)]="minValue"
+        [(highValue)]="maxValue"
+        [options]="sliderOptions">
+      </ngx-slider>
     </div>
   </div>
 </div>

@@ -1,30 +1,25 @@
 .product-catalog-section-sorting-section-budget-class
 {
   display: flex;
-  margin-top: 5.2vmin;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  margin-top: 3.2vmin;
 }
 
 .product-catalog-section-sorting-section-budget-1-class
 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  font-size: 2.8vmin;
+  font-weight: bold;
 }
 
-.product-catalog-section-sorting-section-budget-1-1-class
+.product-catalog-section-sorting-section-budget-2-class
 {
-  color: #193459;
-  font-size: 3.3vmin;
-  font-weight: 600;
+  margin-top: 5vmin;
+  width: 100%;
 }
 
-.product-catalog-section-sorting-section-budget-1-2-class
+ngx-slider
 {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  margin-top: 4vmin;
+  width: 100%;
 }
