@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
@@ -21,8 +21,6 @@ import { FilterBudgetComponent } from './filter-budget/filter-budget.component';
 import { FilterTechnologyComponent } from './filter-technology/filter-technology.component';
 import { FilterSowComponent } from './filter-sow/filter-sow.component';
 import { FilterHeadingComponent } from './filter-heading/filter-heading.component';
-import { SignupComponent } from './signup/signup.component';
-import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -41,9 +39,8 @@ import { LoginPageComponent } from './login-page/login-page.component';
     FilterTechnologyComponent,
     FilterSowComponent,
     FilterHeadingComponent,
-    SignupComponent,
-    LoginPageComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -54,6 +51,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
   providers: [
     provideClientHydration()
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

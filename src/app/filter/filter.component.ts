@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
-@Component({
+@Component
+({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
   styleUrl: './filter.component.css'
 })
+
 export class FilterComponent {
 
 }
