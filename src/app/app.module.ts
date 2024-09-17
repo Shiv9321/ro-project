@@ -1,6 +1,10 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +25,10 @@ import { FilterBudgetComponent } from './filter-budget/filter-budget.component';
 import { FilterTechnologyComponent } from './filter-technology/filter-technology.component';
 import { FilterSowComponent } from './filter-sow/filter-sow.component';
 import { FilterHeadingComponent } from './filter-heading/filter-heading.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { IndexPageComponent } from './index-page/index-page.component';
+import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -39,6 +47,9 @@ import { FilterHeadingComponent } from './filter-heading/filter-heading.componen
     FilterTechnologyComponent,
     FilterSowComponent,
     FilterHeadingComponent,
+    LoginPageComponent,
+    IndexPageComponent,
+    SignUpPageComponent,
   ],
 
   imports: [
@@ -46,10 +57,15 @@ import { FilterHeadingComponent } from './filter-heading/filter-heading.componen
     AppRoutingModule,
     FontAwesomeModule,
     FormsModule,
-    NgxSliderModule
+    NgxSliderModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

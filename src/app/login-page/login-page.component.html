@@ -1,0 +1,45 @@
+<div class="login-container">
+  <div class="login-card-wrapper">
+    <mat-card class="login-card">
+      <div class="login-title">
+        <mat-card-title>Login</mat-card-title>
+      </div>
+      <div class="login-field">
+        <mat-form-field appearance="fill">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="Enter your username" [(ngModel)]="username">
+        </mat-form-field>
+      </div>
+      <div class="password-field">
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput [type]="passwordVisible ? 'text' : 'password'"
+                placeholder="Enter password" [(ngModel)]="password">
+          <fa-icon [icon]="passwordVisible ? 'eye-slash' : 'eye'"
+                    class="eye-icon" (click)="togglePasswordVisibility()">
+          </fa-icon>
+        </mat-form-field>
+      </div>
+      <div class="login-button-wrapper">
+        <button mat-raised-button color="primary" (click)="login()">Login</button>
+      </div>
+      <div class="divider">
+        <span>OR</span>
+      </div>
+      <div class="social-login">
+        <img src="assets/images/google-logo.jpg" alt="google-login"
+              width="32px" height="32px" style="padding-top:0.8vmin">
+        <img src="assets/images/facebook.png" alt="fb-login" width="40px" height="40px">
+        <img src="assets/images/amazon-logo.png" alt="Amazon" width="40px" height="40px"/>
+      </div>
+      <div class="divider">
+        <span>
+         Don't have an account?
+        </span>
+      </div>
+      <div class="sign-up-button-wrapper">
+        <button mat-raised-button color="primary" routerLink="/signup">Sign Up</button>
+      </div>
+    </mat-card>
+  </div>
+</div>

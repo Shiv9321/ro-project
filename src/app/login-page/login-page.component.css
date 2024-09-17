@@ -1,0 +1,168 @@
+.login-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #7babe2, #012d54);
+  padding: 5vmin;
+}
+
+.login-card-wrapper
+{
+  padding: 2vmin;
+}
+
+.login-card
+{
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 5px 10px 10px 10px rgba(98, 141, 165, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background-color: rgb(247, 248, 249);
+}
+
+mat-form-field
+{
+  box-sizing: border-box;
+  padding: 2vmin;
+}
+
+button
+{
+  padding: 1.2vmin 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  font-size: 2.8vmin;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  padding: 2vmin;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  box-shadow: 1px 3px 5px 3px rgb(98, 107, 113);
+}
+
+button:hover
+{
+  background-color: #326eae;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  color: #ffffff;
+}
+
+button:focus
+{
+  outline: none;
+}
+
+.login-title
+{
+  padding: 2vmin;
+}
+
+mat-card-title
+{
+  font-weight: 600;
+  color: #03213c
+}
+
+.login-field, .password-field
+{
+  padding: 2vmin;
+}
+
+.login-button-wrapper
+{
+  padding: 2vmin;
+}
+
+.password-field
+{
+  position: relative;
+}
+
+.eye-icon
+{
+  position: absolute;
+  right: 10px;
+  top: 60%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.divider
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.2vmin 0;
+  width: 100%;
+}
+
+.divider span
+{
+  margin: 0 1.1vmin;
+  font-size: 1.8vmin;
+  color: #555;
+  font-weight: bold;
+}
+
+.divider::before,
+.divider::after
+{
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid #ccc;
+  margin: 0 1.4vmin;
+}
+
+.social-login
+{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin: 2.4vmin 0;
+  padding-left: 1.2vmin;
+}
+
+.social-login img
+{
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin: 0 2vmin;
+}
+
+.social-login img:hover
+{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.sign-up-button-wrapper
+{
+  padding: 2vmin;
+}
+
+@media (max-width: 950px) and (max-height: 950px)
+{
+  .login-container
+  {
+    width: 101vmax;
+    overflow-x: hidden;
+  }
+}
