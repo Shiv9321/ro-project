@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faEyeSlash, faHome } from '@fortawesome/free-solid-svg-icons';
 
 @Component
 ({
@@ -19,7 +19,7 @@ export class SignUpPageComponent {
 
   constructor(library: FaIconLibrary)
   {
-    library.addIcons(faEye, faEyeSlash);
+    library.addIcons(faEye, faEyeSlash, faHome);
   }
 
   togglePasswordVisibility()
