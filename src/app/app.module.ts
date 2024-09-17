@@ -29,6 +29,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { IndexPageComponent } from './index-page/index-page.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     LoginPageComponent,
     IndexPageComponent,
     SignUpPageComponent,
+    AboutUsPageComponent,
   ],
 
   imports: [

@@ -1,0 +1,13 @@
+.about-us-page-class
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vmin;
+}
+
+.about-us-page-section
+{
+  padding-top: 10vmin;
+}

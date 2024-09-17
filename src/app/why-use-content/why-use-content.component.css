@@ -2,33 +2,61 @@
 {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   background-color: #ffffff;
 }
 
-.why-use-content-1-class h1
+.why-use-content-class
 {
-  color: black;
-  font-size: 3.5vmin;
+  padding: 5vmin;
 }
 
 .why-use-content-1-div-class
 {
-  color:  #636ea8;
-  font-size: 2.5vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.why-use-content-2-class h1
+.why-use-content-1-1-div-class
 {
   color: black;
   font-size: 3.5vmin;
+  font-weight: 600;
+}
+
+.why-use-content-1-2-div-class
+{
+  padding-top: 2vmin;
+  color:  #636ea8;
+  font-size: 2.5vmin;
+  text-wrap: wrap;
 }
 
 .why-use-content-2-div-class
 {
-  color: #636ea8;
+  padding-top: 3vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-use-content-2-1-div-class
+{
+  color: black;
+  font-size: 3.5vmin;
+  font-weight: 600;
+}
+
+.why-use-content-2-2-div-class
+{
+  padding-top: 2vmin;
+  color:  #636ea8;
   font-size: 2.5vmin;
+  text-wrap: wrap;
 }
 
 @media (max-width: 950px) and (max-height: 950px)

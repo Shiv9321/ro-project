@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2.5vmin;
+  margin-top: 5.5vmin;
 }
 
 .product-catalog-heading-content-1
@@ -69,6 +69,13 @@
   -o-border-radius: 30px;
   padding: 1.4vmin;
   box-shadow: 1px 5px 5px 5px #9eacbf;
+  color: #032c58;
+}
+
+.product-catalog-section-product-section-more-box-class:hover
+{
+  background-color: #154579;
+  color: #ffffff;
 }
 
 @media (max-width: 950px) and (max-height: 950px)

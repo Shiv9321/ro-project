@@ -55,6 +55,29 @@
   font-size: 3.5vmin;
   font-weight: 600;
   padding: 1.4vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product-catalog-section-product-section-product-1-description-name-product-name-class
+{
+  padding: 0.5vmin;
+}
+
+.product-catalog-section-product-section-product-1-description-name-product-model-class
+{
+  padding: 0.5vmin;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product-catalog-section-product-section-product-1-description-name-product-model-color-class
+{
+  padding-left: 0.5vmin;
 }
 
 .product-catalog-section-product-section-product-1-description-info-class
