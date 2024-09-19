@@ -1,0 +1,20 @@
+<div class="product-catalog-section-product-section-product-image-carousel-class">
+
+  <!-- Left Arrow -->
+  <div class="arrow-container" (click)="prev()">
+    <fa-icon [icon]="'arrow-left'"></fa-icon>
+  </div>
+
+  <!-- Visible images -->
+  <div class="product-catalog-section-product-section-product-1-div-image-class"
+        *ngFor="let image of visibleImages">
+    <img [src]="image.src" alt="section1"
+          class="product-catalog-section-product-section-product-1-div-image-d-class">
+  </div>
+
+  <!-- Right Arrow -->
+  <div class="arrow-container" (click)="next()">
+    <fa-icon [icon]="'arrow-right'"></fa-icon>
+  </div>
+
+</div>

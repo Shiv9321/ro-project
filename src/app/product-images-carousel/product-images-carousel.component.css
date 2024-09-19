@@ -1,0 +1,59 @@
+.product-catalog-section-product-section-product-image-carousel-class
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1vmin;
+  user-select: none;
+  background-color: #ffffff;
+  /* border: 2px solid #144880; */
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.product-catalog-section-product-section-product-1-div-image-class
+{
+  /* background-color: #9bc3c7; */
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 1.5vmin;
+}
+
+.product-catalog-section-product-section-product-1-div-image-d-class
+{
+  width: 200px;
+  height: 200px;
+}
+
+.arrow-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 1.5vmin;
+  /* background-color: #052f5c; */
+}
+
+.arrow-container:hover
+{
+  /* background-color: #052f5c; */
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.arrow-container fa-icon
+{
+  color: white;
+  font-size: 2.2vmin;
+  padding: 0px 5px 0px 5px;
+}

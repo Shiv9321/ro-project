@@ -37,6 +37,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginErrorDialogComponent } from './login-error-dialog/login-error-dialog.component';
 import { DuplicateEntryDialogComponent } from './duplicate-entry-dialog/duplicate-entry-dialog.component';
 import { SignUpSuccessDialogComponent } from './sign-up-success-dialog/sign-up-success-dialog.component';
+import { ProductImagesCarouselComponent } from './product-images-carousel/product-images-carousel.component';
+import { ProductSectionBuyOnComponent } from './product-section-buy-on/product-section-buy-on.component';
+import { ProductSectionDescriptionComponent } from './product-section-description/product-section-description.component';
+import { PinCodeDialogComponent } from './pin-code-dialog/pin-code-dialog.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +67,10 @@ import { SignUpSuccessDialogComponent } from './sign-up-success-dialog/sign-up-s
     LoginErrorDialogComponent,
     DuplicateEntryDialogComponent,
     SignUpSuccessDialogComponent,
+    ProductImagesCarouselComponent,
+    ProductSectionBuyOnComponent,
+    ProductSectionDescriptionComponent,
+    PinCodeDialogComponent,
   ],
 
   imports: [

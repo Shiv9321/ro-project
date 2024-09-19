@@ -1,14 +1,8 @@
 <nav class="navbar">
   <ul class="navbar-menu">
     <li class="navbar-item logo">
-      <a href="#">
+      <a routerLink="/">
         <img src="assets/images/logo-image2.jpg" alt="Logo" />
-      </a>
-    </li>
-    <li class="navbar-item">
-      <a href="#">
-        <fa-icon [icon]="['fas', 'home']"></fa-icon>
-        Home
       </a>
     </li>
     <li class="navbar-item">
@@ -24,21 +18,26 @@
       </a>
     </li>
     <li class="navbar-item">
-      <a routerLink="/login">
-        <fa-icon [icon]="['fas', 'user-lock']"></fa-icon>
-        Log In
+      <a (click)="openPinCodeDialog()">
+        <fa-icon [icon]="['fas', 'map-location']"></fa-icon>
+        {{ locationText }}
       </a>
     </li>
     <li class="navbar-item">
-      <a routerLink="/signup">
+      <a routerLink="/login">
         <fa-icon [icon]="['fas', 'user']"></fa-icon>
-        Sign Up
+        Sign In
       </a>
     </li>
     <li class="navbar-item cart">
       <a href="#">
         <fa-icon [icon]="['fas', 'cart-shopping']"></fa-icon>
         <span class="cart-notification">3</span>
+      </a>
+    </li>
+    <li class="navbar-item">
+      <a href="#">
+        Customer Care
       </a>
     </li>
   </ul>

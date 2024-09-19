@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import
 {
   faHome, faInfoCircle, faUser,
-  faUserLock,faBookmark,faCartShopping
+  faUserLock,faBookmark,faCartShopping,
+  faMapLocation
 }
 from '@fortawesome/free-solid-svg-icons';
+import { PinCodeDialogComponent } from '../pin-code-dialog/pin-code-dialog.component';
 
 @Component
 ({
@@ -16,13 +19,25 @@ from '@fortawesome/free-solid-svg-icons';
 
 export class NavbarComponent {
 
-  constructor(library: FaIconLibrary)
+  locationText = 'Your Location';
+
+  constructor(library: FaIconLibrary, public dialog: MatDialog)
   {
     library.addIcons
     (
       faHome, faInfoCircle,faBookmark,
-      faUserLock,faUser, faCartShopping
+      faUserLock,faUser, faCartShopping, faMapLocation
     );
+  }
+
+  openPinCodeDialog(): void {
+    const dialogRef = this.dialog.open(PinCodeDialogComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.locationText = `At ${result}`;
+      }
+    });
   }
 
 }

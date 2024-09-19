@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Enter Pin Code</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>
+      Pin
+    </mat-label>
+    <input matInput type="text" [(ngModel)]="pinCode" maxlength="6" (input)="onPinCodeInput()"/>
+    <mat-error *ngIf="!isNumeric && pinCode.length !== 6 && pinCode">
+      Pin code must be 6 digits
+    </mat-error>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button [disabled]="pinCode.length !== 6 || !isNumeric" (click)="onSubmit()">
+    Submit
+  </button>
+</div>

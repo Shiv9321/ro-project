@@ -1,0 +1,33 @@
+
+.product-catalog-section-product-section-product-1-buy-class
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.product-catalog-section-product-section-product-1-buy-heading-class
+{
+  color: #052f5c;
+  font-size: 3vmin;
+  padding: 1.4vmin;
+  font-weight: 600;
+}
+
+.product-catalog-section-product-section-product-1-buy-options-class
+{
+  color: #575a5c;
+  font-size: 2.2vmin;
+  font-weight: 500;
+  padding: 1.4vmin;
+}
+
+.product-catalog-section-product-section-product-1-buy-options-amazon-class:hover
+{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
