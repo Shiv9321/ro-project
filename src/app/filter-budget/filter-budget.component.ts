@@ -11,8 +11,8 @@ import { Options } from '@angular-slider/ngx-slider';
 
 export class FilterBudgetComponent {
 
-  minValue: number = 20;
-  maxValue: number = 80;
+  minValue: number = 1000;
+  maxValue: number = 15000;
   sliderOptions!: Options;
   isBrowser: boolean;
 
@@ -23,8 +23,8 @@ export class FilterBudgetComponent {
     {
       this.sliderOptions =
       {
-        floor: 0,
-        ceil: 100
+        floor: 1000,
+        ceil: 15000
       };
     }
   }

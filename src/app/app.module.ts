@@ -6,6 +6,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
+import { MatDialogModule } from '@angular/material/dialog';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,6 +33,10 @@ import { IndexPageComponent } from './index-page/index-page.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginErrorDialogComponent } from './login-error-dialog/login-error-dialog.component';
+import { DuplicateEntryDialogComponent } from './duplicate-entry-dialog/duplicate-entry-dialog.component';
+import { SignUpSuccessDialogComponent } from './sign-up-success-dialog/sign-up-success-dialog.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +59,10 @@ import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
     IndexPageComponent,
     SignUpPageComponent,
     AboutUsPageComponent,
+    DashboardComponent,
+    LoginErrorDialogComponent,
+    DuplicateEntryDialogComponent,
+    SignUpSuccessDialogComponent,
   ],
 
   imports: [
@@ -63,13 +74,16 @@ import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }

@@ -1,23 +1,40 @@
 import { Component } from '@angular/core';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faEye, faEyeSlash, faHome } from '@fortawesome/free-solid-svg-icons';
+import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { LoginErrorDialogComponent } from '../login-error-dialog/login-error-dialog.component';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component
 ({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
-  styleUrl: './login-page.component.css'
+  styleUrls: ['./login-page.component.css']
 })
 
 export class LoginPageComponent {
 
-  username: string = '';
-  password: string = '';
+  loginForm: FormGroup;
   passwordVisible: boolean = false;
 
-  constructor(library: FaIconLibrary)
+  constructor
+  (
+    library: FaIconLibrary,
+    private authService: AuthService,
+    private router: Router,
+    private dialog: MatDialog,
+    private fb: FormBuilder
+  )
   {
     library.addIcons(faEye, faEyeSlash, faHome);
+
+    this.loginForm = this.fb.group
+    ({
+      username: ['', Validators.required],
+      password: ['', [Validators.required, Validators.minLength(6)]]
+    });
   }
 
   togglePasswordVisibility()
@@ -25,8 +42,49 @@ export class LoginPageComponent {
     this.passwordVisible = !this.passwordVisible;
   }
 
-  login()
-  {
-    console.log('Login done');
+  login() {
+
+    if (this.loginForm.invalid)
+    {
+      this.loginForm.markAllAsTouched();
+      return;
+    }
+
+    const { username, password } = this.loginForm.value;
+
+    console.log('Attempting login with username:', username);
+
+    this.authService.login({ username, password })
+      .subscribe
+      ({
+        next: (response) =>
+        {
+          console.log('Login successful', response);
+          this.router.navigate([`/welcome`, username]);
+        },
+        error: (error) =>
+        {
+          console.error('Login failed', error);
+          if (error.status === 401)
+          {
+            this.openErrorDialog();
+          }
+        }
+      });
   }
+
+  openErrorDialog()
+  {
+    this.dialog.open
+    (
+      LoginErrorDialogComponent,
+      {
+        data:
+        {
+          message: 'Credentials did not found.Please try again.'
+        }
+      }
+    );
+  }
+
 }

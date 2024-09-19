@@ -7,57 +7,80 @@
       <div class="sign-up-title">
         <mat-card-title>Sign Up</mat-card-title>
       </div>
-      <div class="sign-up-field">
-        <mat-form-field appearance="fill">
-          <mat-label>Username</mat-label>
-          <input matInput placeholder="Enter your username" [(ngModel)]="username">
-        </mat-form-field>
-      </div>
-      <div class="email-field">
-        <mat-form-field appearance="fill">
-          <mat-label>Email</mat-label>
-          <input matInput type="email" placeholder="Enter your email" [(ngModel)]="email">
-        </mat-form-field>
-      </div>
-      <div class="password-field">
-        <mat-form-field appearance="fill">
-          <mat-label>Password</mat-label>
-          <input matInput [type]="passwordVisible ? 'text' : 'password'"
-                placeholder="Enter password" [(ngModel)]="password">
-          <fa-icon [icon]="passwordVisible ? 'eye-slash' : 'eye'"
-                    class="eye-icon" (click)="togglePasswordVisibility()">
-          </fa-icon>
-        </mat-form-field>
-      </div>
-      <div class="confirm-password-field">
-        <mat-form-field appearance="fill">
-          <mat-label>Confirm</mat-label>
-          <input matInput [type]="passwordVisible ? 'text' : 'password'"
-                placeholder="Confirm" [(ngModel)]="confirmPassword">
-          <fa-icon [icon]="passwordVisible ? 'eye-slash' : 'eye'"
-                    class="eye-icon" (click)="togglePasswordVisibility()">
-          </fa-icon>
-        </mat-form-field>
-      </div>
-      <div class="sign-up-button-wrapper">
-        <button mat-raised-button color="primary" (click)="signUp()">Sign Up</button>
-      </div>
-      <div class="divider">
-        <span>OR</span>
-      </div>
-      <div class="social-login">
-        <img src="assets/images/google-logo.jpg" alt="google-login" width="32px" height="32px" style="padding-top:0.8vmin">
-        <img src="assets/images/facebook.png" alt="fb-login" width="40px" height="40px">
-        <img src="assets/images/amazon-logo.png" alt="Amazon" width="40px" height="40px"/>
-      </div>
-      <div class="divider">
-        <span>
-          Already Have account?
-        </span>
-      </div>
-      <div class="sign-up-button-wrapper">
-        <button mat-raised-button color="primary" routerLink="/login">Log In</button>
-      </div>
+      <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+        <div class="sign-up-field">
+          <mat-form-field appearance="fill">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="Enter your username" formControlName="username">
+            <mat-error *ngIf="f['username'].hasError('required')">
+              Username is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="email-field">
+          <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="Enter your email" formControlName="email">
+            <mat-error *ngIf="f['email'].hasError('required')">
+              Email is required
+            </mat-error>
+            <mat-error *ngIf="f['email'].hasError('pattern')">
+              Enter a valid email address
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="password-field">
+          <mat-form-field appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput [type]="passwordVisible ? 'text' : 'password'"
+                   placeholder="Enter password" formControlName="password">
+            <fa-icon [icon]="passwordVisible ? 'eye-slash' : 'eye'"
+                      class="eye-icon" (click)="togglePasswordVisibility1()">
+            </fa-icon>
+            <mat-error *ngIf="f['password'].hasError('required')">
+              Password is required
+            </mat-error>
+            <mat-error *ngIf="f['password'].hasError('minlength')">
+              Password must be at least 6 characters long
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="confirm-password-field">
+          <mat-form-field appearance="fill">
+            <mat-label>Confirm</mat-label>
+            <input matInput [type]="confirmPasswordVisible ? 'text' : 'password'"
+                    placeholder="Confirm" formControlName="confirmPassword">
+            <fa-icon [icon]="confirmPasswordVisible ? 'eye-slash' : 'eye'"
+                      class="eye-icon" (click)="toggleConfirmPasswordVisibility()"></fa-icon>
+            <mat-error *ngIf="f['confirmPassword'].hasError('required')">
+              Confirm
+            </mat-error>
+            <mat-error *ngIf="signUpForm.hasError('mismatch')">
+              Do not match
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="sign-up-button-wrapper">
+          <button mat-raised-button color="primary" type="submit" [disabled]="signUpForm.invalid">
+            Sign Up
+          </button>
+        </div>
+        <div class="divider">
+          <span>OR</span>
+        </div>
+        <div class="social-login">
+          <img src="assets/images/google-logo.jpg" alt="google-login" width="32px" height="32px"
+                  style="padding-top:0.8vmin">
+          <img src="assets/images/facebook.png" alt="fb-login" width="40px" height="40px">
+          <img src="assets/images/amazon-logo.png" alt="Amazon" width="40px" height="40px"/>
+        </div>
+        <div class="divider">
+          <span>Already Have an account?</span>
+        </div>
+        <div class="sign-up-button-wrapper">
+          <button mat-raised-button color="primary" routerLink="/login">Log In</button>
+        </div>
+      </form>
     </mat-card>
   </div>
 </div>
