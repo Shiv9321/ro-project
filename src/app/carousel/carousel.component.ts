@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 ({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.css']
+  styleUrl: './carousel.component.css'
 })
 
 export class CarouselComponent {

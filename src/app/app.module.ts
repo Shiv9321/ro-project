@@ -41,6 +41,8 @@ import { ProductImagesCarouselComponent } from './product-images-carousel/produc
 import { ProductSectionBuyOnComponent } from './product-section-buy-on/product-section-buy-on.component';
 import { ProductSectionDescriptionComponent } from './product-section-description/product-section-description.component';
 import { PinCodeDialogComponent } from './pin-code-dialog/pin-code-dialog.component';
+import { HeaderComponent } from './header/header.component';
+import { SearchDialogComponent } from './search-dialog/search-dialog.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +73,8 @@ import { PinCodeDialogComponent } from './pin-code-dialog/pin-code-dialog.compon
     ProductSectionBuyOnComponent,
     ProductSectionDescriptionComponent,
     PinCodeDialogComponent,
+    HeaderComponent,
+    SearchDialogComponent,
   ],
 
   imports: [

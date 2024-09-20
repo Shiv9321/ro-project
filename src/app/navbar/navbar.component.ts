@@ -5,10 +5,10 @@ import
 {
   faHome, faInfoCircle, faUser,
   faUserLock,faBookmark,faCartShopping,
-  faMapLocation
+  faArrowDown, faLanguage, faSearch, faTimes
 }
 from '@fortawesome/free-solid-svg-icons';
-import { PinCodeDialogComponent } from '../pin-code-dialog/pin-code-dialog.component';
+import { SearchDialogComponent } from '../search-dialog/search-dialog.component';
 
 @Component
 ({
@@ -19,25 +19,19 @@ import { PinCodeDialogComponent } from '../pin-code-dialog/pin-code-dialog.compo
 
 export class NavbarComponent {
 
-  locationText = 'Your Location';
-
   constructor(library: FaIconLibrary, public dialog: MatDialog)
   {
     library.addIcons
     (
       faHome, faInfoCircle,faBookmark,
-      faUserLock,faUser, faCartShopping, faMapLocation
+      faUserLock,faUser, faCartShopping, faArrowDown, faLanguage,
+      faSearch, faTimes
     );
   }
 
-  openPinCodeDialog(): void {
-    const dialogRef = this.dialog.open(PinCodeDialogComponent);
-
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        this.locationText = `At ${result}`;
-      }
-    });
+  openSearchDialog(): void
+  {
+    this.dialog.open(SearchDialogComponent);
   }
 
 }

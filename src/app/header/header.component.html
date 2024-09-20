@@ -1,0 +1,26 @@
+<div class="header-section">
+  <div class="header-section-become-member">
+    Become a Member
+  </div>
+  <div class="header-section-location">
+    <a (click)="openPinCodeDialog()">
+      {{ locationText }}
+      <fa-icon [icon]="['fas', 'map-location']"
+              style="background-color: #ffffff;color: #052242;padding:2px;border-radius: 50%;">
+      </fa-icon>
+    </a>
+  </div>
+  <div class="header-section-language" style="cursor: pointer;">
+    <div class="language-select-wrapper">
+      <div class="custom-select-wrapper">
+        <select id="language-select" [(ngModel)]="selectedLanguage"
+                (change)="changeLanguage($event)">
+          <option *ngFor="let language of languages" [value]="language.code">
+            {{ language.name }}
+          </option>
+        </select>
+        <fa-icon [icon]="['fas', 'language']" class="custom-arrow"></fa-icon>
+      </div>
+    </div>
+  </div>
+</div>

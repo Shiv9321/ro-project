@@ -1,3 +1,4 @@
+<app-header></app-header>
 <nav class="navbar">
   <ul class="navbar-menu">
     <li class="navbar-item logo">
@@ -18,9 +19,9 @@
       </a>
     </li>
     <li class="navbar-item">
-      <a (click)="openPinCodeDialog()">
-        <fa-icon [icon]="['fas', 'map-location']"></fa-icon>
-        {{ locationText }}
+      <a (click)="openSearchDialog()">
+        <fa-icon [icon]="['fas', 'search']">
+        </fa-icon>
       </a>
     </li>
     <li class="navbar-item">
@@ -32,7 +33,7 @@
     <li class="navbar-item cart">
       <a href="#">
         <fa-icon [icon]="['fas', 'cart-shopping']"></fa-icon>
-        <span class="cart-notification">3</span>
+        <!-- <span class="cart-notification">0</span> -->
       </a>
     </li>
     <li class="navbar-item">
