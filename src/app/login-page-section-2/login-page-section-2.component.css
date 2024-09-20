@@ -1,0 +1,57 @@
+.divider
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.2vmin 0;
+  width: 100%;
+}
+
+.divider span
+{
+  margin: 0 1.1vmin;
+  font-size: 1.8vmin;
+  color: #555;
+  font-weight: bold;
+}
+
+.divider::before,
+.divider::after
+{
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid #ccc;
+  margin: 0 1.4vmin;
+}
+
+.social-login
+{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin: 2.4vmin 0;
+  padding-left: 1.2vmin;
+}
+
+.social-login img
+{
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin: 0 2vmin;
+}
+
+.social-login img:hover
+{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.sign-up-button-wrapper
+{
+  padding: 2vmin;
+  display: flex;
+  justify-content: center;
+}

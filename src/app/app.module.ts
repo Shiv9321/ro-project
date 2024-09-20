@@ -43,6 +43,7 @@ import { ProductSectionDescriptionComponent } from './product-section-descriptio
 import { PinCodeDialogComponent } from './pin-code-dialog/pin-code-dialog.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchDialogComponent } from './search-dialog/search-dialog.component';
+import { LoginPageSection2Component } from './login-page-section-2/login-page-section-2.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +76,7 @@ import { SearchDialogComponent } from './search-dialog/search-dialog.component';
     PinCodeDialogComponent,
     HeaderComponent,
     SearchDialogComponent,
+    LoginPageSection2Component,
   ],
 
   imports: [
