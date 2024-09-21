@@ -11,9 +11,12 @@
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
   color: #052f5c;
-  background-color: #ffffff;
+  background-color: transparent;
+  /* background-color: #ffffff; */
   margin: 3vmin;
-  box-shadow: 1px 1px 10px 4px #5c748e ;
+  /* box-shadow: 1px 1px 10px 4px #5c748e ; */
+  /* border-top: 2px solid #052f5c;
+  border-bottom: 2px solid #052f5c; */
 }
 
 .product-catalog-section-sorting-section-filter-by-below-line-class

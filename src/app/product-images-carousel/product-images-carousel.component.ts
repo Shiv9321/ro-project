@@ -36,7 +36,7 @@ export class ProductImagesCarouselComponent {
     }
     else
     {
-      return this.images.slice(this.currentIndex, this.currentIndex + 1);
+      return this.images.slice(this.currentIndex, this.currentIndex + 2);
     }
   }
 

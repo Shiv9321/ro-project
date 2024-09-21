@@ -51,7 +51,7 @@ input[type="checkbox"]
   cursor: pointer;
   appearance: none;
   outline: none;
-  background-color: white;
+  background-color: transparent;
   position: relative;
 }
 
