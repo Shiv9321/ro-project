@@ -1,0 +1,38 @@
+<div class="dashboard-menu-section-class">
+  <div class="dashboard-menu-section-welcome-class">
+    Hello, {{ username }}!
+  </div>
+  <div class="dashboard-menu-section-welcome-below-line-class">
+  </div>
+  <div class="dashboard-menu-section-home-class">
+    <a routerLink="/">
+      <fa-icon [icon]="'home'"></fa-icon>
+      HOME
+    </a>
+  </div>
+  <div class="dashboard-menu-section-my-profile-class">
+    <a [routerLink]="['/welcome', username, 'profile-page']">
+      <fa-icon [icon]="'person-walking'"></fa-icon>
+      My Profile
+    </a>
+  </div>
+  <div class="dashboard-menu-section-your-order-class">
+    <a href="#">
+      <fa-icon [icon]="'shopping-bag'"></fa-icon>
+      Your Order
+    </a>
+  </div>
+  <div class="dashboard-menu-section-contact-class">
+    <a [routerLink]="['/welcome', username, 'get-in-contact']">
+      <fa-icon [icon]="'headphones-simple'"></fa-icon>
+      Get in
+      Contact
+    </a>
+  </div>
+  <div class="dashboard-menu-section-sign-out-class">
+    <a (click)="SignOut()">
+      <fa-icon [icon]="'sign-out'"></fa-icon>
+      Sign out
+    </a>
+  </div>
+</div>

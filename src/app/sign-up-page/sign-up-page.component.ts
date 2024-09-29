@@ -96,7 +96,7 @@ export class SignUpPageComponent {
       {
         data:
         {
-          message: 'Go to Login Page now'
+          message: 'Going to Login now'
         }
       }
     );

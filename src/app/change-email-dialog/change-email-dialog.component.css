@@ -1,0 +1,38 @@
+.change-Email-form
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-actions
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 3vmin;
+}
+
+mat-form-field
+{
+  margin: 2vmin;
+}
+
+mat-error
+{
+  color: red;
+}
+
+.eye-icon
+{
+  position: absolute;
+  right: 7px;
+  top: 60%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+button
+{
+  margin: 2vmin;
+}

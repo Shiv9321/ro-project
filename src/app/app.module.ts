@@ -33,7 +33,6 @@ import { IndexPageComponent } from './index-page/index-page.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginErrorDialogComponent } from './login-error-dialog/login-error-dialog.component';
 import { DuplicateEntryDialogComponent } from './duplicate-entry-dialog/duplicate-entry-dialog.component';
 import { SignUpSuccessDialogComponent } from './sign-up-success-dialog/sign-up-success-dialog.component';
@@ -44,6 +43,22 @@ import { PinCodeDialogComponent } from './pin-code-dialog/pin-code-dialog.compon
 import { HeaderComponent } from './header/header.component';
 import { SearchDialogComponent } from './search-dialog/search-dialog.component';
 import { LoginPageSection2Component } from './login-page-section-2/login-page-section-2.component';
+import { ChangePasswordDialogComponent } from './change-password-dialog/change-password-dialog.component';
+import { PasswordChangeSuccessDialogComponent } from './password-change-success-dialog/password-change-success-dialog.component';
+import { PasswordChangeNotSuccessDialogComponent } from './password-change-not-success-dialog/password-change-not-success-dialog.component';
+import { ChangeUsernameDialogComponent } from './change-username-dialog/change-username-dialog.component';
+import { UsernameChangeSuccessDialogComponent } from './username-change-success-dialog/username-change-success-dialog.component';
+import { UsernameChangeNotSuccessDialogComponent } from './username-change-not-success-dialog/username-change-not-success-dialog.component';
+import { ChangeEmailDialogComponent } from './change-email-dialog/change-email-dialog.component';
+import { EmailChangeSuccessDialogComponent } from './email-change-success-dialog/email-change-success-dialog.component';
+import { EmailChangeNotSuccessDialogComponent } from './email-change-not-success-dialog/email-change-not-success-dialog.component';
+import { ChangeProfilePicDialogComponent } from './change-profile-pic-dialog/change-profile-pic-dialog.component';
+import { ProfilePicChangeSuccessDialogComponent } from './profile-pic-change-success-dialog/profile-pic-change-success-dialog.component';
+import { ProfilePicChangeNotSuccessDialogComponent } from './profile-pic-change-not-success-dialog/profile-pic-change-not-success-dialog.component';
+import { DashboardMenuSectionComponent } from './dashboard-menu-section/dashboard-menu-section.component';
+import { DashboardProfilePageComponent } from './dashboard-profile-page/dashboard-profile-page.component';
+import { DashboardContactPageComponent } from './dashboard-contact-page/dashboard-contact-page.component';
+import { LoginAgainPleaseDialogComponent } from './login-again-please-dialog/login-again-please-dialog.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +81,6 @@ import { LoginPageSection2Component } from './login-page-section-2/login-page-se
     IndexPageComponent,
     SignUpPageComponent,
     AboutUsPageComponent,
-    DashboardComponent,
     LoginErrorDialogComponent,
     DuplicateEntryDialogComponent,
     SignUpSuccessDialogComponent,
@@ -77,6 +91,22 @@ import { LoginPageSection2Component } from './login-page-section-2/login-page-se
     HeaderComponent,
     SearchDialogComponent,
     LoginPageSection2Component,
+    ChangePasswordDialogComponent,
+    PasswordChangeSuccessDialogComponent,
+    PasswordChangeNotSuccessDialogComponent,
+    ChangeUsernameDialogComponent,
+    UsernameChangeSuccessDialogComponent,
+    UsernameChangeNotSuccessDialogComponent,
+    ChangeEmailDialogComponent,
+    EmailChangeSuccessDialogComponent,
+    EmailChangeNotSuccessDialogComponent,
+    ChangeProfilePicDialogComponent,
+    ProfilePicChangeSuccessDialogComponent,
+    ProfilePicChangeNotSuccessDialogComponent,
+    DashboardMenuSectionComponent,
+    DashboardProfilePageComponent,
+    DashboardContactPageComponent,
+    LoginAgainPleaseDialogComponent,
   ],
 
   imports: [
@@ -92,7 +122,7 @@ import { LoginPageSection2Component } from './login-page-section-2/login-page-se
     MatDialogModule,
     ReactiveFormsModule
   ],
-  providers: [
+  providers:[
     provideClientHydration(),
     provideAnimationsAsync(),
     provideHttpClient(withFetch())
@@ -100,4 +130,5 @@ import { LoginPageSection2Component } from './login-page-section-2/login-page-se
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
+
 export class AppModule { }

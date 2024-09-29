@@ -1,0 +1,43 @@
+.change-ProfilePic-form
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-actions
+{
+  display: flex;
+  justify-content: center;
+  margin: 3vmin;
+}
+
+mat-form-field
+{
+  margin: 2vmin;
+}
+
+mat-error
+{
+  color: red;
+}
+
+button
+{
+  margin: 2vmin;
+}
+
+
+.change-profile-pic-form
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-actions
+{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}

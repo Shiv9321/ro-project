@@ -1,0 +1,156 @@
+.dashboard-menu-section-class
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #052f5c;
+  color: #ffffff;
+  height: 100vh;
+}
+
+.dashboard-menu-section-welcome-class
+{
+  color: #ffffff;
+  font-size: 8.5vmin;
+  margin: 4vmin;
+}
+
+.dashboard-menu-section-welcome-below-line-class
+{
+  height: 1px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dashboard-menu-section-home-class
+{
+  margin: 5vmin;
+}
+
+.dashboard-menu-section-home-class a
+{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.dashboard-menu-section-home-class a:hover
+{
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #052f5c;
+  padding: 1vmin;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.dashboard-menu-section-my-profile-class
+{
+  margin: 5vmin;
+}
+
+.dashboard-menu-section-my-profile-class a
+{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.dashboard-menu-section-my-profile-class a:hover
+{
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #052f5c;
+  padding: 1vmin;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.dashboard-menu-section-your-order-class
+{
+  margin: 5vmin;
+}
+
+.dashboard-menu-section-your-order-class a
+{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.dashboard-menu-section-your-order-class a:hover
+{
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #052f5c;
+  padding: 1vmin;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.dashboard-menu-section-contact-class
+{
+  margin: 5vmin;
+}
+
+.dashboard-menu-section-contact-class a
+{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.dashboard-menu-section-contact-class a:hover
+{
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #052f5c;
+  padding: 1vmin;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.dashboard-menu-section-sign-out-class
+{
+  margin: 5vmin;
+}
+
+.dashboard-menu-section-sign-out-class a
+{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.dashboard-menu-section-sign-out-class a:hover
+{
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #052f5c;
+  padding: 1vmin;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.profile-pic-section
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

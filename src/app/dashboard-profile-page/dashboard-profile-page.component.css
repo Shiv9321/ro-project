@@ -1,0 +1,16 @@
+.dashboard-profile-page-class
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.dashboard-profile-page-show-section-class
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5vmin;
+}

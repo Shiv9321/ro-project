@@ -25,11 +25,19 @@
       </a>
     </li>
     <li class="navbar-item">
-      <a routerLink="/login">
+      <a routerLink="/login"  *ngIf="!isLoggedIn">
         <fa-icon [icon]="['fas', 'user']"></fa-icon>
         Sign In
       </a>
     </li>
+
+    <li class="navbar-item" *ngIf="isLoggedIn">
+      <a routerLink="/welcome/{{ username }}/profile-page">
+        <img [src]="profilePicUrl" alt="Profile Pic" class="profile-pic" width="30px" height="30px">
+        {{ username }}
+      </a>
+    </li>
+
     <li class="navbar-item cart">
       <a href="#">
         <fa-icon [icon]="['fas', 'cart-shopping']"></fa-icon>

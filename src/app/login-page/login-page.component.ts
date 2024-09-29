@@ -60,7 +60,13 @@ export class LoginPageComponent {
         next: (response) =>
         {
           console.log('Login successful', response);
-          this.router.navigate([`/welcome`, username]);
+
+          const profilePicUrl = response.profilePicUrl || 'assets/images/default-profile.jpg';
+
+          // Store the user data and start the session
+          this.authService.storeUserData(username, profilePicUrl);
+
+          this.router.navigate([`/welcome/${username}/profile-page`]);
         },
         error: (error) =>
         {

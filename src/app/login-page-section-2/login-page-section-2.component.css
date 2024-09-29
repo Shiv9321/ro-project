@@ -49,9 +49,10 @@
   -o-transform: scale(1.2);
 }
 
-.sign-up-button-wrapper
+.login-button-wrapper
 {
   padding: 2vmin;
   display: flex;
   justify-content: center;
+  align-items: center;
 }

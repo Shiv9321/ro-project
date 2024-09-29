@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import
@@ -9,6 +9,7 @@ import
 }
 from '@fortawesome/free-solid-svg-icons';
 import { SearchDialogComponent } from '../search-dialog/search-dialog.component';
+import { AuthService } from '../auth.service';
 
 @Component
 ({
@@ -17,9 +18,13 @@ import { SearchDialogComponent } from '../search-dialog/search-dialog.component'
   styleUrl: './navbar.component.css'
 })
 
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
 
-  constructor(library: FaIconLibrary, public dialog: MatDialog)
+  isLoggedIn: boolean = false;
+  username: string = '';
+  profilePicUrl: string = '';
+
+  constructor(library: FaIconLibrary, public dialog: MatDialog,  private authService: AuthService )
   {
     library.addIcons
     (
@@ -27,6 +32,19 @@ export class NavbarComponent {
       faUserLock,faUser, faCartShopping, faArrowDown, faLanguage,
       faSearch, faTimes
     );
+  }
+
+  ngOnInit(): void
+  {
+    // Check if the user is logged in
+    this.isLoggedIn = this.authService.isLoggedIn();
+
+    if (this.isLoggedIn)
+    {
+      // Fetch username and profile pic from AuthService
+      this.username = this.authService.getUsername();
+      this.profilePicUrl = this.authService.getProfilePicUrl();
+    }
   }
 
   openSearchDialog(): void

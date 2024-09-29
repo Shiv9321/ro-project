@@ -1,0 +1,41 @@
+<div class="dashboard-profile-page-class">
+  <app-dashboard-menu-section></app-dashboard-menu-section>
+  <div class="dashboard-profile-page-show-section-class">
+    <div class="dashboard-menu-section-change-username-class">
+      <button mat-button (click)="openChangeUsernameDialog(username)">
+        Change Username
+      </button>
+    </div>
+    <div class="change-password-section">
+      <button mat-button (click)="openChangePasswordDialog(username)">
+        Change Password
+      </button>
+    </div>
+    <div class="change-email-section">
+        Current Email : s1gmail.com
+    </div>
+    <div class="change-email-section">
+      <button mat-button (click)="openChangeEmailDialog()">
+        Change Email
+      </button>
+    </div>
+    <div class="profile-pic-section">
+      <img [src]="profilePicUrl" width="100px" height="100px" style="margin:2vmin">
+      <img [src]="googlePic" alt="google-pic-2"  width="100px" height="100px" style="margin:2vmin">
+    </div>
+    <div class="change-profile-pic-section">
+      <button mat-button (click)="openChangeProfilePicDialog()">
+        Change Profile Picture
+      </button>
+    </div>
+    <div class="change-profile-pic-section">
+        Current Address : xyz-4, p-road, area, locality, city, State, Country
+        (PIN : 123456)
+    </div>
+    <div class="change-profile-pic-section">
+      <button mat-button (click)="openChangeProfilePicDialog()">
+        Change Address
+      </button>
+    </div>
+  </div>
+</div>
