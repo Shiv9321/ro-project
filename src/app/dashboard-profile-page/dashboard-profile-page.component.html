@@ -12,7 +12,7 @@
       </button>
     </div>
     <div class="change-email-section">
-        Current Email : s1gmail.com
+        Current Email : {{email}}
     </div>
     <div class="change-email-section">
       <button mat-button (click)="openChangeEmailDialog()">
@@ -29,11 +29,10 @@
       </button>
     </div>
     <div class="change-profile-pic-section">
-        Current Address : xyz-4, p-road, area, locality, city, State, Country
-        (PIN : 123456)
+        Current Address: {{ address }}
     </div>
     <div class="change-profile-pic-section">
-      <button mat-button (click)="openChangeProfilePicDialog()">
+      <button mat-button (click)="openChangeAddressDialog()">
         Change Address
       </button>
     </div>

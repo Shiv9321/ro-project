@@ -13,7 +13,7 @@ import { LoginAgainPleaseDialogComponent } from './login-again-please-dialog/log
 export class AuthService {
 
   private apiUrl = 'http://localhost:3000/api/users';
-  private sessionTimeout = 0.2 * 60 * 1000;
+  private sessionTimeout = 5 * 60 * 1000;
   private sessionTimer: any; // To hold the session timer reference
 
   constructor

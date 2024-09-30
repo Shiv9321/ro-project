@@ -59,6 +59,9 @@ import { DashboardMenuSectionComponent } from './dashboard-menu-section/dashboar
 import { DashboardProfilePageComponent } from './dashboard-profile-page/dashboard-profile-page.component';
 import { DashboardContactPageComponent } from './dashboard-contact-page/dashboard-contact-page.component';
 import { LoginAgainPleaseDialogComponent } from './login-again-please-dialog/login-again-please-dialog.component';
+import { ChangeAddressDialogComponent } from './change-address-dialog/change-address-dialog.component';
+import { AddressChangeSuccessDialogComponent } from './address-change-success-dialog/address-change-success-dialog.component';
+import { AddressChangeNotSuccessDialogComponent } from './address-change-not-success-dialog/address-change-not-success-dialog.component';
 
 @NgModule({
   declarations: [
@@ -107,6 +110,9 @@ import { LoginAgainPleaseDialogComponent } from './login-again-please-dialog/log
     DashboardProfilePageComponent,
     DashboardContactPageComponent,
     LoginAgainPleaseDialogComponent,
+    ChangeAddressDialogComponent,
+    AddressChangeSuccessDialogComponent,
+    AddressChangeNotSuccessDialogComponent,
   ],
 
   imports: [

@@ -8,6 +8,7 @@ import { ChangeUsernameDialogComponent } from '../change-username-dialog/change-
 import { ChangeEmailDialogComponent } from '../change-email-dialog/change-email-dialog.component';
 import { HttpClient } from '@angular/common/http';
 import { ChangeProfilePicDialogComponent } from '../change-profile-pic-dialog/change-profile-pic-dialog.component';
+import { ChangeAddressDialogComponent } from '../change-address-dialog/change-address-dialog.component';
 
 @Component
 ({
@@ -21,6 +22,8 @@ export class DashboardProfilePageComponent {
   username: string = '';
   profilePicUrl: string = '../../assets/images/default-profile.jpg';
   googlePic: string= '../../assets/images/google-logo.jpg';
+  address: string = 'xyz-4, p-road, area, locality, city, State, Country (PIN : 123456)';
+  email: string = "";
 
   constructor
   (
@@ -47,14 +50,19 @@ export class DashboardProfilePageComponent {
   fetchUserProfile(): void
   {
     console.log('Fetching user profile for:', this.username);
-    this.http.get<{ profilePicUrl: string }>
+    this.http.get<{ profilePicUrl: string, address: string, email: string }>
     (`http://localhost:3000/api/users/profile/${this.username}`)
     .subscribe
     ({
       next: (user) =>
       {
         this.profilePicUrl = `http://localhost:3000/${user.profilePicUrl}`;
-        console.log('Profile Picture URL:', this.profilePicUrl);
+        this.address = user.address;
+        this.email = user.email;
+        console.log('Profile Picture URL: ', this.profilePicUrl);
+        console.log('Address :', this.address);
+        console.log('Email: ', this.email);
+
       },
       error: (error) =>
       {
@@ -98,6 +106,16 @@ export class DashboardProfilePageComponent {
     this.dialog.open
     (
       ChangeProfilePicDialogComponent,
+      {
+        data: { username: this.username }
+      });
+  }
+
+  openChangeAddressDialog(): void
+  {
+    this.dialog.open
+    (
+      ChangeAddressDialogComponent,
       {
         data: { username: this.username }
       });
