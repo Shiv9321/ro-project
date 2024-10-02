@@ -6,6 +6,7 @@ import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 import { DashboardProfilePageComponent } from './dashboard-profile-page/dashboard-profile-page.component';
 import { DashboardContactPageComponent } from './dashboard-contact-page/dashboard-contact-page.component';
+import { DashboardYourOrderPageComponent } from './dashboard-your-order-page/dashboard-your-order-page.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginPageComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'aboutus', component: AboutUsPageComponent },
   { path: 'welcome/:username/profile-page', component: DashboardProfilePageComponent },
   { path: 'welcome/:username/get-in-contact', component: DashboardContactPageComponent },
+  { path: 'welcome/:username/your-order', component: DashboardYourOrderPageComponent},
   { path: '',  component: IndexPageComponent }
 ];
 

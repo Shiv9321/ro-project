@@ -62,6 +62,7 @@ import { LoginAgainPleaseDialogComponent } from './login-again-please-dialog/log
 import { ChangeAddressDialogComponent } from './change-address-dialog/change-address-dialog.component';
 import { AddressChangeSuccessDialogComponent } from './address-change-success-dialog/address-change-success-dialog.component';
 import { AddressChangeNotSuccessDialogComponent } from './address-change-not-success-dialog/address-change-not-success-dialog.component';
+import { DashboardYourOrderPageComponent } from './dashboard-your-order-page/dashboard-your-order-page.component';
 
 @NgModule({
   declarations: [
@@ -113,6 +114,7 @@ import { AddressChangeNotSuccessDialogComponent } from './address-change-not-suc
     ChangeAddressDialogComponent,
     AddressChangeSuccessDialogComponent,
     AddressChangeNotSuccessDialogComponent,
+    DashboardYourOrderPageComponent,
   ],
 
   imports: [
